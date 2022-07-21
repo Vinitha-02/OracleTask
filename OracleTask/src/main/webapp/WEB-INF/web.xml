@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+ <listener>  
+ <listener-class>task.ApplicationListener</listener-class>  
+ </listener>  
+  <servlet>
+  	<servlet-name>CreateEmployee</servlet-name>
+  	<display-name>CreateEmployee</display-name>
+  	<servlet-class>task.CreateEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CreateEmployee</servlet-name>
+  	<url-pattern>/Employee/CreateEmployee/1.0.0</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<servlet-class>task.DeleteEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteEmployee</servlet-name>
+  	<url-pattern>/Employee/DeleteEmployee/1.0.0</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>ListEmployee</servlet-name>
+  	<display-name>ListEmployee</display-name>
+  	<servlet-class>task.ListEmployee</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ListEmployee</servlet-name>
+  	<url-pattern>/Employee/ListEmployee/1.0.0</url-pattern>
+  </servlet-mapping>
+</web-app>
